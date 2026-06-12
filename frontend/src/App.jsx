@@ -12,7 +12,7 @@ function App() {
   const fetchAnalytics = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/analytics/all"
+        "https://url-shortener-ujwi.onrender.com/shorten"
       );
       setAnalytics(response.data);
     } catch (err) {

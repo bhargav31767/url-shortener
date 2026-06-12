@@ -12,7 +12,7 @@ function App() {
   const fetchAnalytics = async () => {
     try {
       const response = await axios.get(
-        "https://url-shortener-ujwi.onrender.com/shorten"
+        "https://url-shortener-ujwi.onrender.com/analytics/all"
       );
       setAnalytics(response.data);
     } catch (err) {
@@ -31,7 +31,7 @@ function App() {
       setError("");
 
       const response = await axios.post(
-        "https://url-shortener-ujwi.onrender.com/analytics/all",
+        "https://url-shortener-ujwi.onrender.com/shorten",
         { url }
       );
 

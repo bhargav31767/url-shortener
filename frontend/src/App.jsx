@@ -31,7 +31,7 @@ function App() {
       setError("");
 
       const response = await axios.post(
-        "http://localhost:5000/shorten",
+        "https://url-shortener-ujwi.onrender.com/analytics/all",
         { url }
       );
 
